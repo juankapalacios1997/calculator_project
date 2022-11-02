@@ -1,0 +1,92 @@
+body {
+    box-sizing: border-box;
+    max-width: 600px;
+    background-color: rgb(100, 255, 100);
+    margin: 0 auto;
+}
+
+#id1 {
+    width: 600px;
+    border: 1px solid black;
+    height: 420px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: #333;
+}
+
+.demo {
+    color: white;
+    margin: 0 auto;
+}
+
+.screen {
+    margin: 24px auto 0;
+    width: 300px;
+    height: 80px;
+    background-color: rgb(0, 150, 0);
+    border: 2px solid rgb(0, 85, 0);
+    border-radius: 10px;
+}
+
+.input {
+    padding-top: 12px;
+    width: 85%;
+    height: 80%;
+    margin: auto;
+    font-size: 48px;
+    font-weight: lighter;
+    text-align: right;
+}
+
+.buttons {
+    margin: 24px auto 0;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    margin: 4px;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.number {
+    background-color: #ccc;
+    border-color: #aaa;
+}
+
+.operation {
+    background-color: rgb(255, 255, 125);
+    border-color: rgb(255, 255, 150);
+}
+
+.equal {
+    background-color: rgb(255, 150, 0);
+    border-color: rgb(255, 100, 0); 
+}
+
+.big {
+    width: 136px;
+}
+
+.number:hover, .number:active {
+    background-color: #aaa;
+    border-color: #888;
+}
+
+.operation:hover, .operation:active {
+    background-color: rgb(255, 255, 75);
+    border-color: rgb(255, 255, 50);
+}
+
+.equal:hover, .equal:active {
+    background-color: rgb(255, 100, 0);
+    border-color: rgb(255, 50, 0); 
+}
+
