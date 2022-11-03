@@ -13,7 +13,7 @@ numberButtons.forEach(number => {
             input1 = number.innerText
         }
         console.log(input1);
-        screen.innerText = input1;
+        input1.length >= 16 ? screen.innerText = input1.substring((input1.length - 16), input1.length) : screen.innerText = input1;
     })
 })
 
@@ -32,14 +32,19 @@ operationButtons.forEach(ops => {
             operation = ops.id;
             }
         } else {
+            let result;
             if (operation == "add") {
-                screen.innerText = parseInt(input2) + parseInt(input1);
+                result = parseInt(input2) + parseInt(input1);
+                screen.innerText = result;
             } else if (operation == "sub") {
-                screen.innerText = parseInt(input2) - parseInt(input1);
+                result = parseInt(input2) - parseInt(input1);
+                screen.innerText = result;
             } else if (operation == "mul") {
-                screen.innerText = parseInt(input2) * parseInt(input1);
+                result = parseInt(input2) * parseInt(input1);
+                screen.innerText = result;
             } else if (operation == "div") {
-                screen.innerText = parseInt(input2) / parseInt(input1);
+                result = parseInt(input2) / parseInt(input1);
+                screen.innerText = result;
             }
         }
     })
