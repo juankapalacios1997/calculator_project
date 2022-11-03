@@ -1,7 +1,7 @@
 body {
     box-sizing: border-box;
     max-width: 600px;
-    background-color: rgb(100, 255, 100);
+    background-color: rgb(255, 100, 100);
     margin: 0 auto;
 }
 
@@ -29,11 +29,11 @@ body {
 }
 
 .input {
-    padding-top: 12px;
+    padding-top: 20px;
     width: 85%;
     height: 80%;
     margin: auto;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: lighter;
     text-align: right;
 }
