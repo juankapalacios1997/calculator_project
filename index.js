@@ -35,17 +35,19 @@ operationButtons.forEach(ops => {
             let result;
             if (operation == "add") {
                 result = parseInt(input2) + parseInt(input1);
-                screen.innerText = result;
+                result >= 1000000000000000 ? screen.innerText = result.toExponential() : screen.innerText = result;
             } else if (operation == "sub") {
                 result = parseInt(input2) - parseInt(input1);
-                screen.innerText = result;
+                result >= 1000000000000000 ? screen.innerText = result.toExponential() : screen.innerText = result;
             } else if (operation == "mul") {
                 result = parseInt(input2) * parseInt(input1);
-                screen.innerText = result;
+                result >= 1000000000000000 ? screen.innerText = result.toExponential() : screen.innerText = result;
             } else if (operation == "div") {
                 result = parseInt(input2) / parseInt(input1);
-                screen.innerText = result;
+                result >= 1000000000000000 ? screen.innerText = result.toExponential() : screen.innerText = result;
             }
         }
     })
 })
+
+
